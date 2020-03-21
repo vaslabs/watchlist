@@ -6,4 +6,4 @@ sbt service/run
 ```
 2. Go to localhost:8080/docs
 
-The project structures is inspired from the hexagonal architecture.
+The project structure is inspired from the hexagonal architecture.
