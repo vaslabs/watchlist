@@ -6,7 +6,7 @@ import watchlist.protocol.Customer.{Ack, AddItem, DeleteItem, ListItems}
 
 import scala.concurrent.Future
 class CustomerWatchlistsApi( watchListConfig: WatchListConfig,
-                             actorRef: ActorRef[Customer.CustomerProtocol])(implicit
+                             actorRef: ActorRef[Customer.CustomerProtocol[ActorRef]])(implicit
                               scheduler: Scheduler) {
 
   def add(customerId: CustomerId, item: Item): Future[Ack] = {
